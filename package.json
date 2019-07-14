@@ -1,0 +1,34 @@
+{
+  "name": "express-starter-pack",
+  "version": "1.2.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "node ./scripts/postinstall.js",
+    "dev": "nodemon index.js",
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "connect-sqlite3": "^0.9.11",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.16.4",
+    "express-fileupload": "^1.1.1-alpha.3",
+    "express-session": "^1.15.6",
+    "guess-file-type": "^0.6.0",
+    "kisapmata": "^1.1.3",
+    "lodash": "^4.17.11",
+    "moment": "^2.24.0",
+    "mongoose": "^5.4.16",
+    "nunjucks": "^3.1.7",
+    "troso": "^1.1.0"
+  }
+}

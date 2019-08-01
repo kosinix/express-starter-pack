@@ -1,0 +1,14 @@
+{
+    "app": {
+        "port": "3002",
+        "url": "http://localhost:3002"
+    },
+    "express": {
+        "trustProxy": true
+    },
+    "nunjucks": {
+        "loader": {
+            "noCache": false
+        }
+    }
+}

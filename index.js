@@ -10,16 +10,16 @@ global.APP_DIR = path.resolve(__dirname).replace(/\\/g, '/'); // Turn back slash
 global.APP_ENV = lodash.get(process, 'env.NODE_ENV', 'dev');
 
 //// Modules
-const ocinLoader = require(path.join(APP_DIR, 'src', 'ocin-config', 'index'));
+const pigura = require('pigura');
 
 // Load config and credentials
-let configLoader = new ocinLoader.ConfigLoader({ 
+let configLoader = new pigura.ConfigLoader({ 
     configName: 'config.json',
     appDir: APP_DIR,
     env: APP_ENV,
     logging: true
 })
-let credLoader = new ocinLoader.ConfigLoader({ 
+let credLoader = new pigura.ConfigLoader({ 
     configName: 'credentials.json',
     appDir: APP_DIR,
     env: APP_ENV,

@@ -2,14 +2,14 @@
     "app": {
         "port": "3000",
         "url": "http://localhost:3000",
-        "dir": "$APP_DIR",
+        "dir": "${APP_DIR}",
         "dirs": {
-            "data": "$APP_DIR/data",
-            "src": "$APP_DIR/src",
-            "log": "$APP_DIR/data/log",
-            "public": "$APP_DIR/data/public",
-            "upload": "$APP_DIR/data/upload",
-            "view": "$APP_DIR/data/view"
+            "data": "${APP_DIR}/data",
+            "src": "${APP_DIR}/src",
+            "log": "${APP_DIR}/data/log",
+            "public": "${APP_DIR}/data/public",
+            "upload": "${APP_DIR}/data/upload",
+            "view": "${APP_DIR}/data/view"
         }
     },
     "express": {
@@ -28,10 +28,10 @@
         }
     },
     "session": {
-        "name": "connect.ec.sid",
+        "name": "myapp.sid",
         "store": {
             "db": "sessions.db",
-            "dir": "$APP_DIR/data"
+            "dir": "${APP_DIR}/data"
         },
         "cookie": {
             "httpOnly": false,

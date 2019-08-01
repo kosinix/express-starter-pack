@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "node ./scripts/postinstall.js",
-    "dev": "nodemon index.js",
+    "dev": "set NODE_ENV=dev&& nodemon index.js",
+    "sandbox": "set NODE_ENV=sandbox&& nodemon index.js",
+    "live": "set NODE_ENV=live&& node index.js",
     "test": "./node_modules/.bin/mocha --reporter spec"
   },
   "keywords": [],
